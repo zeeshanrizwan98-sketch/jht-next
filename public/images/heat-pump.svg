@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <rect width="800" height="600" fill="#f8fafc"/>
+  
+  <!-- Outer metal casing -->
+  <rect x="200" y="120" width="400" height="360" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="4"/>
+  <rect x="200" y="120" width="400" height="60" rx="6" fill="#0f172a"/>
+  <text x="400" y="160" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="20" font-weight="900" fill="#10b981">
+    AIR SOURCE HEAT PUMP
+  </text>
+  
+  <!-- Fan Grill -->
+  <circle cx="360" cy="320" r="110" fill="#f1f5f9" stroke="#94a3b8" stroke-width="4"/>
+  <circle cx="360" cy="320" r="25" fill="#334155"/>
+  
+  <!-- Fan Blades -->
+  <path d="M 360 295 L 360 215 C 380 215 390 240 375 295 Z" fill="#475569"/>
+  <path d="M 360 345 L 360 425 C 340 425 330 400 345 345 Z" fill="#475569"/>
+  <path d="M 385 320 L 465 320 C 465 340 440 350 385 335 Z" fill="#475569"/>
+  <path d="M 335 320 L 255 320 C 255 300 280 290 335 305 Z" fill="#475569"/>
+  
+  <!-- Air Flow Indicator (arrows) -->
+  <path d="M 490 280 Q 560 280 540 300 M 540 300 L 520 290 M 540 300 L 530 320" fill="none" stroke="#0284c7" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 490 320 Q 560 320 540 340 M 540 340 L 520 330 M 540 340 L 530 360" fill="none" stroke="#0284c7" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Control Box / Details on casing -->
+  <rect x="520" y="200" width="50" height="90" rx="4" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="2"/>
+  <line x1="530" y1="220" x2="560" y2="220" stroke="#475569" stroke-width="2"/>
+  <line x1="530" y1="230" x2="555" y2="230" stroke="#475569" stroke-width="2"/>
+  <circle cx="535" cy="265" r="5" fill="#ef4444"/>
+  <circle cx="550" cy="265" r="5" fill="#10b981"/>
+</svg>

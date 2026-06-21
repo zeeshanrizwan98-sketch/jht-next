@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <rect width="800" height="600" fill="#f8fafc"/>
+  
+  <!-- Sun -->
+  <circle cx="600" cy="150" r="50" fill="#f59e0b" opacity="0.9"/>
+  <path d="M 600 80 L 600 60 M 600 220 L 600 240 M 530 150 L 510 150 M 670 150 L 690 150" stroke="#f59e0b" stroke-width="6" stroke-linecap="round"/>
+  <path d="M 550 100 L 535 85 M 650 200 L 665 215 M 550 200 L 535 215 M 650 100 L 665 85" stroke="#f59e0b" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Solar Panel Grid (isometric tilted) -->
+  <polygon points="150,420 450,220 650,300 350,500" fill="#1e293b" stroke="#475569" stroke-width="4"/>
+  
+  <!-- Horizontal Grid Lines -->
+  <line x1="200" y1="386" x2="500" y2="186" stroke="#64748b" stroke-width="3" opacity="0.4"/>
+  <line x1="225" y1="403" x2="525" y2="203" stroke="#64748b" stroke-width="3" opacity="0.4"/>
+  <line x1="250" y1="420" x2="550" y2="220" stroke="#64748b" stroke-width="3" opacity="0.4"/>
+  <line x1="275" y1="436" x2="575" y2="236" stroke="#64748b" stroke-width="3" opacity="0.4"/>
+  <line x1="300" y1="453" x2="600" y2="253" stroke="#64748b" stroke-width="3" opacity="0.4"/>
+  <line x1="325" y1="470" x2="625" y2="270" stroke="#64748b" stroke-width="3" opacity="0.4"/>
+  
+  <!-- Vertical Grid Lines -->
+  <line x1="225" y1="370" x2="425" y2="450" stroke="#38bdf8" stroke-width="2"/>
+  <line x1="300" y1="320" x2="500" y2="400" stroke="#38bdf8" stroke-width="2"/>
+  <line x1="375" y1="270" x2="575" y2="350" stroke="#38bdf8" stroke-width="2"/>
+  <line x1="450" y1="220" x2="650" y2="300" stroke="#38bdf8" stroke-width="2"/>
+  
+  <!-- Panel Reflection/Glint -->
+  <polygon points="300,330 450,230 460,250 310,350" fill="#ffffff" opacity="0.15"/>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <rect width="800" height="600" fill="#f8fafc"/>
+  
+  <!-- Brick Layer (Left side) -->
+  <g fill="#f87171" stroke="#ef4444" stroke-width="2">
+    <rect x="100" y="100" width="100" height="40"/>
+    <rect x="210" y="100" width="100" height="40"/>
+    <rect x="50" y="150" width="100" height="40"/>
+    <rect x="160" y="150" width="100" height="40"/>
+    <rect x="270" y="150" width="40" height="40"/>
+    <rect x="100" y="200" width="100" height="40"/>
+    <rect x="210" y="200" width="100" height="40"/>
+    <rect x="50" y="250" width="100" height="40"/>
+    <rect x="160" y="250" width="100" height="40"/>
+    <rect x="270" y="250" width="40" height="40"/>
+    <rect x="100" y="300" width="100" height="40"/>
+    <rect x="210" y="300" width="100" height="40"/>
+    <rect x="50" y="350" width="100" height="40"/>
+    <rect x="160" y="350" width="100" height="40"/>
+    <rect x="270" y="350" width="40" height="40"/>
+    <rect x="100" y="400" width="100" height="40"/>
+    <rect x="210" y="400" width="100" height="40"/>
+  </g>
+  
+  <!-- Insulation Layer (Center) -->
+  <rect x="330" y="80" width="120" height="440" fill="#a7f3d0" stroke="#059669" stroke-width="3"/>
+  <path d="M 350 100 L 430 500 M 370 100 L 450 500 M 330 150 L 410 550" stroke="#10b981" stroke-width="4" opacity="0.3"/>
+  
+  <!-- Render/Plaster Finish (Right side) -->
+  <rect x="470" y="80" width="230" height="440" fill="#e2e8f0" stroke="#94a3b8" stroke-width="3"/>
+  
+  <!-- Labels -->
+  <rect x="350" y="220" width="80" height="30" rx="4" fill="#065f46"/>
+  <text x="390" y="240" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#ffffff">ECO FOAM</text>
+  
+  <rect x="530" y="220" width="110" height="30" rx="4" fill="#1e293b"/>
+  <text x="585" y="240" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#ffffff">ROUGHCAST RENDER</text>
+</svg>

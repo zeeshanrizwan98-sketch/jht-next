@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <rect width="800" height="600" fill="#f8fafc"/>
+  
+  <!-- Clipboard -->
+  <rect x="250" y="100" width="300" height="420" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="4"/>
+  <rect x="350" y="80" width="100" height="40" rx="6" fill="#475569"/>
+  
+  <!-- House outlines on clipboard -->
+  <path d="M 370 210 L 400 180 L 430 210 L 430 250 H 370 Z" fill="none" stroke="#059669" stroke-width="3"/>
+  
+  <!-- Checklist items -->
+  <circle cx="300" cy="300" r="12" fill="#10b981"/>
+  <path d="M 295 300 L 298 303 L 305 295" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <line x1="330" y1="300" x2="500" y2="300" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+  
+  <circle cx="300" cy="350" r="12" fill="#10b981"/>
+  <path d="M 295 350 L 298 353 L 305 345" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <line x1="330" y1="350" x2="480" y2="350" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+  
+  <circle cx="300" cy="400" r="12" fill="#10b981"/>
+  <path d="M 295 400 L 298 403 L 305 395" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <line x1="330" y1="400" x2="450" y2="400" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Heading -->
+  <text x="400" y="150" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="20" font-weight="900" fill="#0f172a">
+    ENERGY PERFORMANCE (EPC)
+  </text>
+</svg>

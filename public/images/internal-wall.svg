@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <rect width="800" height="600" fill="#f8fafc"/>
+  
+  <!-- Solid External Brick Wall (Right side) -->
+  <g fill="#f87171" stroke="#ef4444" stroke-width="2">
+    <rect x="550" y="80" width="150" height="50"/>
+    <rect x="500" y="140" width="150" height="50"/>
+    <rect x="660" y="140" width="40" height="50"/>
+    <rect x="550" y="200" width="150" height="50"/>
+    <rect x="500" y="260" width="150" height="50"/>
+    <rect x="660" y="260" width="40" height="50"/>
+    <rect x="550" y="320" width="150" height="50"/>
+    <rect x="500" y="380" width="150" height="50"/>
+    <rect x="660" y="380" width="40" height="50"/>
+    <rect x="550" y="440" width="150" height="50"/>
+  </g>
+  
+  <!-- Stud Work / Timber frames (Center) -->
+  <rect x="360" y="80" width="110" height="440" fill="#fef08a" stroke="#ca8a04" stroke-width="2"/>
+  <line x1="360" y1="180" x2="470" y2="180" stroke="#ca8a04" stroke-width="2"/>
+  <line x1="360" y1="280" x2="470" y2="280" stroke="#ca8a04" stroke-width="2"/>
+  <line x1="360" y1="380" x2="470" y2="380" stroke="#ca8a04" stroke-width="2"/>
+  
+  <!-- Plasterboard (Left side) -->
+  <rect x="150" y="80" width="180" height="440" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="3"/>
+  <circle cx="200" cy="150" r="6" fill="#94a3b8"/>
+  <circle cx="200" cy="300" r="6" fill="#94a3b8"/>
+  <circle cx="200" cy="450" r="6" fill="#94a3b8"/>
+  
+  <text x="240" y="300" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="18" font-weight="800" fill="#475569">
+    PLASTERBOARD
+  </text>
+  <text x="415" y="300" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="16" font-weight="800" fill="#854d0e">
+    INSULATION
+  </text>
+</svg>
