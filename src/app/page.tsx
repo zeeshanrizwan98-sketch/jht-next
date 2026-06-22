@@ -174,33 +174,70 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* 2. ELIGIBILITY QUIZ SECTION (Simple, focus, no clutter) */}
-        <section id="eligibility-checker" className="py-20 px-4 bg-slate-50 scroll-mt-16 border-b border-slate-200">
-          <div className="mx-auto max-w-4xl space-y-10">
-            <div className="text-center space-y-3">
-              <h2 className="text-3xl md:text-5xl font-black text-slate-900 tracking-tight">
-                Eligibility Checker
+        {/* 2. ELIGIBILITY QUIZ SECTION (2-column premium layout) */}
+        <section id="eligibility-checker" className="py-24 px-4 bg-gradient-to-b from-slate-50 via-slate-100/50 to-slate-50 border-b border-slate-200">
+          <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            {/* Left Column: Context & Trust points */}
+            <div className="lg:col-span-5 space-y-6 text-left">
+              <div className="text-emerald-600 font-bold text-xs uppercase tracking-wider flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse"></span>
+                Quick 3-Question Test
+              </div>
+              <h2 className="text-3xl md:text-5xl font-black text-slate-900 tracking-tight leading-tight">
+                Check Your Eligibility
               </h2>
-              <p className="text-slate-550 text-sm md:text-base max-w-md mx-auto">
-                Answer these 3 simple questions to check if you qualify for a fully-funded grant.
+              <p className="text-slate-600 text-sm md:text-base leading-relaxed font-medium">
+                UK property owners and tenants can claim 100% free heating and insulation upgrades. Use our quick checker to see what funding is available for your home.
               </p>
-            </div>
-            <Suspense fallback={
-              <div className="w-full bg-white rounded-2xl border border-slate-200 p-8 shadow-sm flex items-center justify-center h-80">
-                <div className="text-center space-y-2">
-                  <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-emerald-600 mx-auto"></div>
-                  <p className="text-slate-500 text-sm font-semibold">Loading Quiz...</p>
+              
+              <ul className="space-y-4 pt-2">
+                {[
+                  "No personal details required to check eligibility",
+                  "Checks both ECO4 and GBIS government funding schemes",
+                  "Directly connects you to certified local installers",
+                  "Saves up to £550/year* in energy bill savings"
+                ].map((point, i) => (
+                  <li key={i} className="flex items-start gap-2.5 text-sm font-semibold text-slate-700">
+                    <CheckCircle2 className="text-emerald-600 mt-0.5 flex-shrink-0" size={16} />
+                    <span>{point}</span>
+                  </li>
+                ))}
+              </ul>
+              
+              {/* Trust badges strip */}
+              <div className="pt-6 border-t border-slate-200 space-y-3">
+                <span className="block text-[10px] font-extrabold text-slate-400 uppercase tracking-widest">
+                  Accredited ECO4 Installers
+                </span>
+                <div className="flex flex-wrap gap-2 text-[10px] text-slate-500 font-bold">
+                  <span className="bg-white/85 py-1.5 px-3 rounded border border-slate-200 shadow-sm">✓ Gas Safe</span>
+                  <span className="bg-white/85 py-1.5 px-3 rounded border border-slate-200 shadow-sm">✓ TrustMark</span>
+                  <span className="bg-white/85 py-1.5 px-3 rounded border border-slate-200 shadow-sm">✓ MCS Certified</span>
                 </div>
               </div>
-            }>
-              <EligibilityQuiz inline={false} />
-            </Suspense>
+            </div>
+
+            {/* Right Column: Quiz container */}
+            <div className="lg:col-span-7">
+              <Suspense fallback={
+                <div className="w-full bg-white rounded-2xl border border-slate-200 p-8 shadow-sm flex items-center justify-center h-80">
+                  <div className="text-center space-y-2">
+                    <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-emerald-600 mx-auto"></div>
+                    <p className="text-slate-500 text-sm font-semibold">Loading Quiz...</p>
+                  </div>
+                </div>
+              }>
+                <EligibilityQuiz inline={false} />
+              </Suspense>
+            </div>
+
           </div>
         </section>
 
-        {/* 3. HOW IT WORKS SECTION (Asymmetric vertical layout) */}
-        <section className="py-20 px-4 bg-white border-b border-slate-200">
-          <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-12 gap-12">
+        {/* 3. HOW IT WORKS SECTION (Asymmetric card grid layout) */}
+        <section className="py-24 px-4 bg-slate-50 border-b border-slate-200">
+          <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
             {/* Left side: big text block */}
             <div className="lg:col-span-5 space-y-6">
@@ -210,8 +247,8 @@ export default function HomePage() {
               <h2 className="text-3xl md:text-5xl font-black text-slate-900 tracking-tight leading-tight">
                 How It Works
               </h2>
-              <p className="text-slate-650 text-sm md:text-base leading-relaxed font-medium">
-                JHT Energy Services coordinates the entire process on your behalf. From verifying your LA Flex/ECO4 credentials to conducting audits and complete installation, we handle the friction.
+              <p className="text-slate-600 text-sm md:text-base leading-relaxed font-medium">
+                JHT Energy Services coordinates the entire process on your behalf. From verifying your LA Flex/ECO4 credentials to conducting audits and complete installation, we handle all the friction.
               </p>
               <div className="pt-4">
                 <a 
@@ -223,8 +260,8 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Right side: vertical timeline with big numbers */}
-            <div className="lg:col-span-7 grid grid-cols-1 md:grid-cols-3 gap-0 border border-slate-200 bg-white">
+            {/* Right side: floating card grid */}
+            <div className="lg:col-span-7 grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 {
                   step: "01",
@@ -242,20 +279,23 @@ export default function HomePage() {
                   desc: "Our fully certified MCS-accredited solar/heat pump engineers and Gas Safe technicians fit the measures. All backed by solid guarantees at zero cost."
                 }
               ].map((item, idx) => (
-                <div key={idx} className={`p-6 space-y-4 flex flex-col justify-start ${idx < 2 ? 'border-b md:border-b-0 md:border-r border-slate-200' : ''}`}>
-                  <span className="block text-2xl font-black text-emerald-600">
+                <div 
+                  key={idx} 
+                  className="bg-white border border-slate-200/80 rounded-2xl p-6 md:p-8 flex flex-col justify-start space-y-4 shadow-sm hover:shadow-md hover:scale-[1.02] transition-all duration-300"
+                >
+                  <div className="w-12 h-12 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-100 flex items-center justify-center font-black text-lg">
                     {item.step}
-                  </span>
+                  </div>
                   <div className="space-y-2">
-                    <h3 className="text-sm font-extrabold text-slate-900 uppercase tracking-wider">{item.title}</h3>
-                    <p className="text-slate-500 text-xs leading-relaxed">{item.desc}</p>
+                    <h3 className="text-xs font-black text-slate-900 uppercase tracking-wider leading-snug">{item.title}</h3>
+                    <p className="text-slate-500 text-[11px] leading-relaxed">{item.desc}</p>
                   </div>
                 </div>
               ))}
             </div>
+
           </div>
         </section>
-
 
         {/* 4. SERVICES / PRODUCTS SECTION (Hierarchical split-grid) */}
         <section className="py-20 px-4 bg-slate-50 border-b border-slate-200">
